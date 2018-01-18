@@ -1,6 +1,6 @@
 <?php
 
-namespace fast;
+namespace blue;
 
 /**
  * 中文转拼音类

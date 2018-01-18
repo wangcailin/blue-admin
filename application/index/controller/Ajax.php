@@ -3,7 +3,7 @@
 namespace app\index\controller;
 
 use app\common\controller\Frontend;
-use fast\Random;
+use blue\Random;
 use think\Config;
 use think\Lang;
 

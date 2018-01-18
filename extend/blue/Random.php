@@ -1,6 +1,6 @@
 <?php
 
-namespace fast;
+namespace blue;
 
 /**
  * 随机生成类

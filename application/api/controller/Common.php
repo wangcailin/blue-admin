@@ -4,7 +4,7 @@ namespace app\api\controller;
 
 use app\api\model\Area;
 use app\common\controller\Api;
-use fast\Version;
+use blue\Version;
 use think\Config;
 
 /**

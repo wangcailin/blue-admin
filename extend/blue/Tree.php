@@ -1,6 +1,6 @@
 <?php
 
-namespace fast;
+namespace blue;
 
 use think\Config;
 

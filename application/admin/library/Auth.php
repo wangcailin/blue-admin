@@ -3,14 +3,14 @@
 namespace app\admin\library;
 
 use app\admin\model\Admin;
-use fast\Random;
-use fast\Tree;
+use blue\Random;
+use blue\Tree;
 use think\Config;
 use think\Cookie;
 use think\Request;
 use think\Session;
 
-class Auth extends \fast\Auth
+class Auth extends \blue\Auth
 {
 
     protected $requestUri = '';

@@ -4,7 +4,7 @@ namespace app\common\library;
 
 use app\common\model\User;
 use app\common\model\UserRule;
-use fast\Random;
+use blue\Random;
 use think\Config;
 use think\Db;
 use think\Hook;

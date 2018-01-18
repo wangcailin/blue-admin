@@ -1,6 +1,6 @@
 <?php
 
-namespace fast;
+namespace blue;
 
 /**
  * 日期时间处理类

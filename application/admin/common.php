@@ -1,8 +1,8 @@
 <?php
 
 use app\common\model\Category;
-use fast\Form;
-use fast\Tree;
+use blue\Form;
+use blue\Tree;
 use think\Db;
 
 /**

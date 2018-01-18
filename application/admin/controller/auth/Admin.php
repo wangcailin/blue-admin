@@ -5,8 +5,8 @@ namespace app\admin\controller\auth;
 use app\admin\model\AuthGroup;
 use app\admin\model\AuthGroupAccess;
 use app\common\controller\Backend;
-use fast\Random;
-use fast\Tree;
+use blue\Random;
+use blue\Tree;
 
 /**
  * 管理员管理

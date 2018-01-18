@@ -4,7 +4,7 @@ namespace app\admin\controller\auth;
 
 use app\admin\model\AuthGroup;
 use app\common\controller\Backend;
-use fast\Tree;
+use blue\Tree;
 
 /**
  * 角色组

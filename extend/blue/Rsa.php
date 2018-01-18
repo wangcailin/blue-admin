@@ -1,6 +1,6 @@
 <?php
 
-namespace fast;
+namespace blue;
 
 /**
  * RSA签名类
