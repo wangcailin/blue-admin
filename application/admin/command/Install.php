@@ -36,7 +36,7 @@ class Install extends Command
             throw new Exception("\nFastAdmin already installed!\nIf you need to reinstall again, use the parameter --force=true ");
         }
 
-        $sql = file_get_contents(__DIR__ . '/Install/fastadmin.sql');
+        $sql = file_get_contents(__DIR__ . '/Install/blueadmin.sql');
 
         // 先尝试能否自动创建数据库
         $config = Config::get('database');
