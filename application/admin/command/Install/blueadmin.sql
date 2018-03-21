@@ -1,12 +1,20 @@
 /*
- FastAdmin Install SQL
+ Navicat Premium Data Transfer
 
- 官网: http://www.fastadmin.net
- 演示: http://demo.fastadmin.net
+ Source Server         : localhost_3306
+ Source Server Type    : MySQL
+ Source Server Version : 50639
+ Source Host           : localhost:3306
+ Source Schema         : blueadminhls
 
- Date: 2017年09月15日
+ Target Server Type    : MySQL
+ Target Server Version : 50639
+ File Encoding         : 65001
+
+ Date: 28/02/2018 14:33:46
 */
 
+SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
@@ -35,11 +43,7 @@ CREATE TABLE `blue_admin` (
 -- Records of blue_admin
 -- ----------------------------
 BEGIN;
-INSERT INTO `blue_admin` VALUES (1, 'admin', 'Admin', '075eaec83636846f51c152f29b98a2fd', 's4f3', '/assets/img/avatar.png', 'admin@fastadmin.net', 0, 1502029281, 1492186163, 1502029281, 'd3992c3b-5ecc-4ecb-9dc2-8997780fcadc', 'normal');
-INSERT INTO `blue_admin` VALUES (2, 'admin2', 'admin2', '9a28ce07ce875fbd14172a9ca5357d3c', '2dHDmj', '/assets/img/avatar.png', 'admin2@fastadmin.net', 0, 1505450906, 1492186163, 1505450906, 'df45fdd5-26f4-45ca-83b3-47e4491a315a', 'normal');
-INSERT INTO `blue_admin` VALUES (3, 'admin3', 'admin3', '1c11f945dfcd808a130a8c2a8753fe62', 'WOKJEn', '/assets/img/avatar.png', 'admin3@fastadmin.net', 0, 1501980868, 1492186201, 1501982377, '', 'normal');
-INSERT INTO `blue_admin` VALUES (4, 'admin22', 'admin22', '1c1a0aa0c3c56a8c1a908aab94519648', 'Aybcn5', '/assets/img/avatar.png', 'admin22@fastadmin.net', 0, 0, 1492186240, 1492186240, '', 'normal');
-INSERT INTO `blue_admin` VALUES (5, 'admin32', 'admin32', 'ade94d5d7a7033afa7d84ac3066d0a02', 'FvYK0u', '/assets/img/avatar.png', 'admin32@fastadmin.net', 0, 0, 1492186263, 1492186263, '', 'normal');
+INSERT INTO `blue_admin` VALUES (1, 'admin', 'Admin', '075eaec83636846f51c152f29b98a2fd', 's4f3', '/assets/img/avatar.png', 'dreamcailin@hotmail.com', 0, 1519790450, 1492186163, 1519799595, 'fa83c04b-0d44-4464-a3b5-c42d7d660d2e', 'normal');
 COMMIT;
 
 -- ----------------------------
@@ -58,7 +62,11 @@ CREATE TABLE `blue_admin_log` (
   `createtime` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '操作时间',
   PRIMARY KEY (`id`),
   KEY `name` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=1317 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='管理员日志表';
+) ENGINE=InnoDB AUTO_INCREMENT=1327 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='管理员日志表';
+
+-- ----------------------------
+-- Records of blue_admin_log
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for blue_attachment
@@ -109,10 +117,6 @@ CREATE TABLE `blue_auth_group` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `blue_auth_group` VALUES (1, 0, 'Admin group', '*', 1490883540, 149088354, 'normal');
-INSERT INTO `blue_auth_group` VALUES (2, 1, 'Second group', '13,14,16,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,40,41,42,43,44,45,46,47,48,49,50,55,56,57,58,59,60,61,62,63,64,65,1,9,10,11,7,6,8,2,4,5', 1490883540, 1505465692, 'normal');
-INSERT INTO `blue_auth_group` VALUES (3, 2, 'Third group', '1,4,9,10,11,13,14,15,16,17,40,41,42,43,44,45,46,47,48,49,50,55,56,57,58,59,60,61,62,63,64,65,5', 1490883540, 1502205322, 'normal');
-INSERT INTO `blue_auth_group` VALUES (4, 1, 'Second group 2', '1,4,13,14,15,16,17,55,56,57,58,59,60,61,62,63,64,65', 1490883540, 1502205350, 'normal');
-INSERT INTO `blue_auth_group` VALUES (5, 2, 'Third group 2', '1,2,6,7,8,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34', 1490883540, 1502205344, 'normal');
 COMMIT;
 
 -- ----------------------------
@@ -132,10 +136,6 @@ CREATE TABLE `blue_auth_group_access` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `blue_auth_group_access` VALUES (1, 1);
-INSERT INTO `blue_auth_group_access` VALUES (2, 2);
-INSERT INTO `blue_auth_group_access` VALUES (3, 3);
-INSERT INTO `blue_auth_group_access` VALUES (4, 5);
-INSERT INTO `blue_auth_group_access` VALUES (5, 5);
 COMMIT;
 
 -- ----------------------------
@@ -299,7 +299,7 @@ CREATE TABLE `blue_config` (
 -- Records of blue_config
 -- ----------------------------
 BEGIN;
-INSERT INTO `blue_config` VALUES (1, 'name', 'basic', 'Site name', '请填写站点名称', 'string', 'FastAdmin', '', 'required', '');
+INSERT INTO `blue_config` VALUES (1, 'name', 'basic', 'Site name', '请填写站点名称', 'string', 'BlueAdmin', '', 'required', '');
 INSERT INTO `blue_config` VALUES (2, 'beian', 'basic', 'Beian', '粤ICP备15054802号-4', 'string', '', '', '', '');
 INSERT INTO `blue_config` VALUES (3, 'cdnurl', 'basic', 'Cdn url', '如果静态资源使用第三方云储存请配置该值', 'string', '', '', '', '');
 INSERT INTO `blue_config` VALUES (4, 'version', 'basic', 'Version', '如果静态资源有变动请重新配置该值', 'string', '1.0.1', '', 'required', '');

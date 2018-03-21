@@ -74,7 +74,7 @@ if (!function_exists('human_date'))
      */
     function human_date($time, $local = null)
     {
-        return \fast\Date::human($time, $local);
+        return \blue\Date::human($time, $local);
     }
 
 }
